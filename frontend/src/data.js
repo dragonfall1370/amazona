@@ -19,7 +19,7 @@ const data = {
             price:100,
             brand:'Addidas',
             rating:4.0,
-            numReviews:8,
+            numReviews:3,
             description:'high quality product'
         },
         {
@@ -41,7 +41,7 @@ const data = {
             price:160,
             brand:'Nike',
             rating:5.0,
-            numReviews:10,
+            numReviews:1,
             description:'high quality product'
         },
         {
@@ -62,7 +62,7 @@ const data = {
             image:'/images/p6.jpg',
             price:700,
             brand:'benthanh',
-            rating:1.0,
+            rating:0.5,
             numReviews:100,
             description:'poor quality product'
         }
