@@ -9,7 +9,8 @@ export default function CartScreen(props) {
     let { id } = useParams();
     const productId = id;
     const { search } = useLocation();
-    const qty = search ? Number(search.split('=')[1]) : 1;
+    const qtyInUrl = new URLSearchParams(search).get('qty');
+    const qty = qtyInUrl ? Number(qtyInUrl.split('=')[1]) : 1;
     const cart = useSelector((state) => state.cart)
     const { cartItems } = cart;
     // const cart = useSelector(state => state.cart);
@@ -28,7 +29,7 @@ export default function CartScreen(props) {
     let navigate = useNavigate();
 
     const checkoutHandler = () => {
-        navigate(`/signin?redirect=shipping`);
+        navigate(`/signin?redirect=/shipping`);
     };
 
 
