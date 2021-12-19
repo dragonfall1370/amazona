@@ -239,6 +239,10 @@ img.small {
     background-color: #ffe0e0e0;
 }
 
+.loading{
+    display: block !important;
+}
+
 /* Form */
 .form{
     max-width: 60rem;
